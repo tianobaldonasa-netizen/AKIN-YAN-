@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dearest Bubbles ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <canvas id="treeCanvas"></canvas>
+
+    <div class="container">
+        <div class="glass-card" id="mainCard">
+            <div class="typewriter-container">
+                <span id="typewriter"></span><span class="cursor">|</span>
+            </div>
+
+            <button id="openLetterBtn" class="hidden">Read My Letter 💌</button>
+        </div>
+
+        <div class="letter-modal hidden" id="letterModal">
+            <div class="letter-content glass-card">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <h1>To the girl who changed my world, Bubbles,</h1>
+                <p class="letter-text" id="letterText"></p>
+                <div class="signature hidden" id="signature">
+                    With all my heart,<br>
+                    Your Bub ❤️
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating hearts container -->
+    <div id="heartsContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
