@@ -170,7 +170,9 @@ function initTree() {
     const isMobile = window.innerWidth <= 768;
     const startX = isMobile ? canvas.width / 2 : canvas.width * 0.75;
     const startY = canvas.height;
-    const treeHeight = isMobile ? Math.min(canvas.height / 3, 150) : Math.min(canvas.height / 3, 250);
+    
+    // On mobile, make the trunk tall enough so the hearts bloom ABOVE the letter card
+    const treeHeight = isMobile ? (canvas.height * 0.3) : Math.min(canvas.height / 3, 250);
     
     // Initial branch starts from bottom
     branches.push(new Branch(startX, startY, -Math.PI / 2, treeHeight, 15));
